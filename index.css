@@ -54,6 +54,7 @@ ul {
   justify-content: space-between;
   align-items: center;
   gap: 5rem;
+  padding-block: 0.4rem;
 }
 
 .card-container li *:last-child {
