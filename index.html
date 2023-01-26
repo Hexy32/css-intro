@@ -235,15 +235,6 @@
             </div>
 
             <div>
-              <h4>Tag</h4>
-              <p>
-                You can select an element by its HTML tag, you can include parent elements to
-                increase specificity.
-              </p>
-              <p class="code-block">ul li { ... }</p>
-            </div>
-
-            <div>
               <h4>Combinators</h4>
               <p>
                 You can use combinators when you want to more specificity select children or
@@ -269,6 +260,39 @@
                   <span>General sibling: targets all following siblings of an element</span>
                 </li>
               </ul>
+            </div>
+
+            <div>
+              <h3>Most used selectors</h3>
+
+              <br />
+
+              <h4>Tag</h4>
+              <p>
+                You can select an element by its HTML tag, you can include parent elements to
+                increase specificity.
+              </p>
+              <p class="code-block">ul li { ... }</p>
+
+              <h4>ID</h4>
+              <p>
+                Using an ID attribute is a common way to select specific HTML. Keep in mind that an
+                ID can only be used once on a HTML page. In CSS the
+                <span class="code-snip">#</span> character indicates an ID.
+              </p>
+
+              <p class="code-block">&lt;div id=&quot;foo&quot;&gt;&lt;/div&gt;</p>
+              <p class="code-block">#foo { ... }</p>
+
+              <h4>Class</h4>
+              <p>
+                Classes are used when you want to apply style to multiple elements. This makes it
+                easy to have consistent styling across your page. Classes use the
+                <span class="code-snip">.</span> character in CSS.
+              </p>
+
+              <p class="code-block">&lt;div class=&quot;foo&quot;&gt;&lt;/div&gt;</p>
+              <p class="code-block">.foo { ... }</p>
             </div>
 
             <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors"
