@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Learn CSS</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h2>Learn CSS</h2>
+        <span>Home</span>
+        <nav>
+          <ul>
+            <li>
+              <a href="./">Home</a>
+            </li>
+            <li>
+              <a href="./inline-css.html">Inline CSS</a>
+            </li>
+            <li>
+              <a href="./style-tags.html">Style Tag</a>
+            </li>
+            <li>
+              <a href="./stylesheet.html">Stylesheet</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <div class="section-title" style="margin-top: 0">
+          <h2>CSS?</h2>
+          <p>
+            Most of this information came directly from mdn documentation, every card has a "Read
+            more" link, if you need to read the proper and full documentation about a topic
+          </p>
+        </div>
+        <div class="card-container">
+          <section class="card">
+            <div>
+              <h3>What is CSS?</h3>
+              <p>
+                CSS (Cascading Style Sheets) allows you to create great-looking web pages in various
+                ways. It can also help you layout information in a more readable and accessible way.
+              </p>
+            </div>
+            <a
+              target="_blank"
+              href="https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/What_is_CSS"
+              >Read more</a
+            >
+          </section>
+          <section>
+            <div>
+              <h3>Why use CSS?</h3>
+              <p>
+                CSS can help you better present your website, it can help you increase
+                accessability, and it can make your website more engaging.
+              </p>
+            </div>
+            <a
+              target="_blank"
+              href="https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/What_is_CSS"
+              >Read more</a
+            >
+          </section>
+          <section>
+            <div>
+              <h3>How do you use CSS?</h3>
+              <p>
+                This website has examples of the ways to use CSS on every page, go to the
+                <a href="./inline-css.html">Inline CSS</a> page to get started with the easiest one.
+              </p>
+            </div>
+            <a
+              target="_blank"
+              href="https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/What_is_CSS"
+              >Read more</a
+            >
+          </section>
+        </div>
+        <div class="section-title">
+          <h2>Some handy rules with CSS</h2>
+          <p>These are some cheat-sheets you can use to remember the quirks of CSS</p>
+        </div>
+        <div class="card-container">
+          <section>
+            <div>
+              <h3>Inline vs Block</h3>
+              <p>
+                The display CSS property sets whether an element is treated as a block or inline
+                element and the layout used for its children, such as flow layout, grid or flex.
+              </p>
+            </div>
+
+            <div>
+              <h4>The main ones:</h4>
+              <ul>
+                <li>
+                  <span>block</span> <span>Can be any width and height, is always a square</span>
+                </li>
+                <li>
+                  <span>inline-block</span>
+                  <span
+                    >Takes up the minimum amount of room possible for it's content while always
+                    being a square</span
+                  >
+                </li>
+                <li>
+                  <span>inline</span>
+                  <span>Takes up the minimum amount of room possible for it's content</span>
+                </li>
+                <li>
+                  <span>none</span>
+                  <span>Removes the content from the document flow (completely removes it)</span>
+                </li>
+                <li>
+                  <span>flex</span>
+                  <span>A way to make extremely customizable 1 dimensional grids</span>
+                </li>
+                <li>
+                  <span>grid</span>
+                  <span>A way to make extremely customizable 1 or 2 dimensional grids</span>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h4>Visual example</h4>
+
+              <p class="code-block">display: block;</p>
+              <p style="display: block; outline: solid #aaa 2px; border-radius: 5px">
+                This is sample text to show the <br />
+                difference between <br />
+                displays in CSS.
+              </p>
+
+              <p class="code-block">display: inline-block;</p>
+              <p style="display: inline-block; outline: solid #aaa 2px; border-radius: 5px">
+                This is sample text to show the <br />
+                difference between <br />
+                displays in CSS.
+              </p>
+
+              <p class="code-block">display: inline;</p>
+              <p style="display: inline; outline: solid #aaa 2px; border-radius: 5px">
+                This is sample text to show the <br />
+                difference between <br />
+                displays in CSS.
+              </p>
+            </div>
+
+            <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS/display"
+              >Read more</a
+            >
+          </section>
+          <section>
+            <div>
+              <h3>Units</h3>
+              <p>Units in CSS can help you size your elements and text.</p>
+            </div>
+
+            <div>
+              <h4>Absolute lengths</h4>
+              <p>
+                The absolute length units are fixed and a length expressed in any of these will
+                appear as exactly that size. Absolute length units are not recommended for use on
+                screen, because screen sizes vary so much. However, they can be used if the output
+                medium is known, such as for print layout.
+              </p>
+              <ul>
+                <li><span>cm</span> <span>centimeters</span></li>
+                <li><span>mm</span> <span>millimeters</span></li>
+                <li><span>in</span> <span>inches (1in = 96px = 2.54cm)</span></li>
+                <li><span>px*</span> <span>pixels (1px = 1/96th of 1in)</span></li>
+                <li><span>pt</span> <span>points (1pt = 1/72 of 1in)</span></li>
+                <li><span>pc</span> <span>picas (1pc = 12 pt)</span></li>
+              </ul>
+              <p>
+                * Pixels (px) are relative to the viewing device. For low-dpi devices, 1px is one
+                device pixel (dot) of the display. For printers and high resolution screens 1px
+                implies multiple device pixels.
+              </p>
+            </div>
+
+            <div>
+              <h4>Relative lengths</h4>
+              <p>
+                Relative length units specify a length relative to another length property. Relative
+                length units scale better between different rendering medium.
+              </p>
+              <ul>
+                <li>
+                  <span>em</span>
+                  <span>
+                    Relative to the font-size of the element (2em means 2 times the size of the
+                    current font)
+                  </span>
+                </li>
+                <li>
+                  <span>ex</span>
+                  <span> Relative to the x-height of the current font (rarely used)</span>
+                </li>
+                <li><span>ch</span> <span>Relative to the width of the "0" (zero)</span></li>
+                <li><span>rem</span> <span>Relative to font-size of the root element</span></li>
+                <li><span>vw</span> <span>Relative to 1% of the width of the viewport*</span></li>
+                <li><span>vh</span> <span>Relative to 1% of the height of the viewport*</span></li>
+                <li>
+                  <span>vmin</span> <span>Relative to 1% of viewport's* smaller dimension</span>
+                </li>
+                <li>
+                  <span>vmax</span> <span>Relative to 1% of viewport's* larger dimension</span>
+                </li>
+                <li><span>%</span> <span>Relative to the parent element</span></li>
+              </ul>
+              <p>The em and rem units are practical in creating perfectly scalable layout!</p>
+            </div>
+
+            <a
+              target="_blank"
+              href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units"
+              >Read more</a
+            >
+          </section>
+          <section>
+            <div>
+              <h3>CSS Selectors</h3>
+              <p>
+                CSS selectors define the pattern to select elements to which a set of CSS rules are
+                then applied.
+              </p>
+            </div>
+
+            <div>
+              <h4>Tag</h4>
+              <p>
+                You can select an element by its HTML tag, you can include parent elements to
+                increase specificity.
+              </p>
+              <p class="code-block">ul li { ... }</p>
+            </div>
+
+            <div>
+              <h4>Combinators</h4>
+              <p>
+                You can use combinators when you want to more specificity select children or
+                siblings of an element. For example this code will select the
+                <span class="code-snip">li</span> element that is a direct child of the
+                <span class="code-snip">ul</span> element, any nested
+                <span class="code-snip">li</span> elements will be excluded.
+              </p>
+              <p class="code-block">ul > li { ... }</p>
+              <p>There are 3 types of combinators: child, adjacent sibling, and general sibling.</p>
+              <ul>
+                <li>
+                  <span> > </span> <span>Child: targets the immediate child of an element</span>
+                </li>
+                <li>
+                  <span> + </span>
+                  <span
+                    >Adjacent sibling: targets the following adjacent sibling of an element</span
+                  >
+                </li>
+                <li>
+                  <span> ~ </span>
+                  <span>General sibling: targets all following siblings of an element</span>
+                </li>
+              </ul>
+            </div>
+
+            <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors"
+              >Read more</a
+            >
+          </section>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
